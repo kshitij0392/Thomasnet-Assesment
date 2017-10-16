@@ -52,7 +52,7 @@
     <div class="products">
       <ul class="nav nav-tabs">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Products</a>
+          <a class="nav-link active" href="#" style="color:red; font-weight:bold">Products</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Industries/Applications</a>
@@ -115,25 +115,28 @@
         <hr width=200px color=red height=200px top=100px>
         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
           aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </p>
+        </p>
       </div>
       <div class="progress-indicator">
         <div class="indicator">
           <span class="center-text">480<span style="color:red">+</span> </span>
-          <round-progress [current]="current" [max]="max" [color]="color" [background]="'#FFFFF'" [radius]=110 [animationDelay]=3000 [duration]=3000>   </round-progress>
+          <round-progress [current]="current" [max]="max" [color]="color" [background]="'#FFFFF'" [radius]=110 [animationDelay]=3000
+            [duration]=3000> </round-progress>
           <p class="indicator-text"> million kilometers of <br> something </p>
         </div>
         <div class="indicator">
-            <span class="center-text">500<span style="color:red">+</span> </span>
-            <round-progress [current]="current" [max]="max" [color]="color" [background]="'#FFFFF'"  [radius]=110 [animationDelay]=3000 [duration]=3000></round-progress>
-            <p class="indicator-text"> fancy patents filled </p>
-          </div>
+          <span class="center-text">500<span style="color:red">+</span> </span>
+          <round-progress [current]="current" [max]="max" [color]="color" [background]="'#FFFFF'" [radius]=110 [animationDelay]=3000
+            [duration]=3000></round-progress>
+          <p class="indicator-text"> fancy patents filled </p>
+        </div>
 
-          <div class="indicator">
-              <span class="center-text" id="thrid-circle"> 20 </span>
-              <round-progress [current]="current" [max]="max" [color]="color" [background]="'#FFFFF'"  [radius]=110 [animationDelay]=3000 [duration]=3000></round-progress>
-              <p class="indicator-text"> factories throughout <br> the world </p>
-            </div>
+        <div class="indicator">
+          <span class="center-text" id="thrid-circle"> 20 </span>
+          <round-progress [current]="current" [max]="max" [color]="color" [background]="'#FFFFF'" [radius]=110 [animationDelay]=3000
+            [duration]=3000></round-progress>
+          <p class="indicator-text"> factories throughout <br> the world </p>
+        </div>
       </div>
 
 
@@ -183,12 +186,12 @@
 
 <section>
   <footer>
-<div class="container" style="height:100px;">
-  <div class="footer">
-      <p id="footer-text"> 2017 Generic Company LLC. All Rights Reserved | Site Created by Thomas Marketing</p>
-  </div>
-    
-</div>
+    <div class="container" style="height:100px;">
+      <div class="footer">
+        <p id="footer-text"> 2017 Generic Company LLC. All Rights Reserved | Site Created by Thomas Marketing</p>
+      </div>
+
+    </div>
   </footer>
 
 </section>

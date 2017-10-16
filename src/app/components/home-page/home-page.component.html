@@ -5,7 +5,7 @@
       aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-    <img src="../assets/logo-exmpl.png">
+      <a href="#">  <img src="../assets/logo-exmpl.png"></a>
     <div class="categories">
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
@@ -67,13 +67,15 @@
           </ng-template>
         </div>
         <ng-template #next>
-          <img [src]="rightImg" id="right-img" (mouseover)="mouseOnRight()" (mouseleave)=" mouseLeaveRight()">
+          <img [src]="rightImg" id="right-img" (mouseover)="mouseOnRight()" (mouseleave)=" mouseLeaveRight()" >
         </ng-template>
 
         <ng-template #item let-item let-i="index">
           <div class="items">
             <div class="product-desc">
+              <a href="#">
               <img src="{{item.name}}" id="bulb-img">
+            </a>
             </div>
             <p id="prod-name"> Product {{item.id}}</p>
           </div>

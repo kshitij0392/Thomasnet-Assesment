@@ -68,10 +68,12 @@
 #left-img{
     position: relative;
     right:85%;
+    cursor: pointer;
 }
 #right-img{
     position: relative;
     left:140%;
+    cursor: pointer;
 }
 
 .tab-content{

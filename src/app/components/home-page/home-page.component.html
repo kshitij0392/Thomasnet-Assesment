@@ -1,0 +1,194 @@
+<section class="container home-nav">
+
+  <nav class="navbar navbar-toggleable-md navbar-light bg-faded" style="background-color:white;">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <img src="../assets/logo-exmpl.png">
+    <div class="categories">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active listItem">
+            <a class="nav-link" href="#">About </a>
+          </li>
+          <li class="nav-item listItem">
+            <a class="nav-link" href="#">Catalogs</a>
+          </li>
+          <li class="nav-item listItem">
+            <a class="nav-link" href="#">Industries</a>
+          </li>
+          <li class="nav-item listItem">
+            <a class="nav-link " href="#">Capabilities</a>
+          </li>
+          <li class="nav-item listItem">
+            <a class="nav-link " href="#">Blog</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</section>
+
+<section>
+  <div class="sec-section">
+    <div class="container">
+      <div class="header">
+        <span> Manufacturer of Some <br>  Industrial Product</span> <br>
+        <p id="sub-text"> Serving Industries Worldwide.</p>
+        <div class="btns">
+          <button class="btn header-btn" type="button"> View Our Capabilities </button>
+          <button class="btn header-btn" type="button"> Meet Our Experts </button>
+        </div>
+      </div>
+      <img id="header-image" src="../assets/img-product.png">
+    </div>
+  </div>
+</section>
+
+
+<section>
+  <div class="container prod">
+    <div class="products">
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Industries/Applications</a>
+        </li>
+      </ul>
+    </div>
+    <div role="tabpanel" class="tab-pane fade active show" id="home" aria-labelledby="home-tab" aria-expanded="true">
+      <div ng2-carouselamos class="tab-content" [items]="items" [width]="1150" [$prev]="prev" [$next]="next" [$item]="item">
+        <div class="prev-arrow">
+          <ng-template #prev>
+            <img [src]="leftImg" id="left-img" (mouseover)="mouseOnLeft()" (mouseleave)=" mouseLeaveLeft()">
+          </ng-template>
+        </div>
+        <ng-template #next>
+          <img [src]="rightImg" id="right-img" (mouseover)="mouseOnRight()" (mouseleave)=" mouseLeaveRight()">
+        </ng-template>
+
+        <ng-template #item let-item let-i="index">
+          <div class="items">
+            <div class="product-desc">
+              <img src="{{item.name}}" id="bulb-img">
+            </div>
+            <p id="prod-name"> Product {{item.id}}</p>
+          </div>
+        </ng-template>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+
+  <div class="newsletter">
+    <div class="container">
+      <div class="newletter-header">
+        <span> Generic Newsletter</span> <br>
+        <p id="sub-text"> Join Our Newsletters For Latest Updates.</p>
+        <div class="inputFields">
+          <div class="name">
+            <input class="form-control" type="text" placeholder="Full name" style="width:200px; margin-right:15px;">
+          </div>
+          <div class="email">
+            <input class="form-control" type="email" placeholder="Email Address*" style="width:200px; margin-right:15px;">
+          </div>
+          <div class="submit-button">
+            <button class="btn btn-primary" type="submit" href="#" style="background-color: red; width:100px; position:absolute; cursor:pointer"> Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="achievements">
+    <div class="container">
+      <div class="achievement-header">
+        <h1> Premier Global Provider of Industrial Solutions</h1>
+        <hr width=200px color=red height=200px top=100px>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+      </div>
+      <div class="progress-indicator">
+        <div class="indicator">
+          <span class="center-text">480<span style="color:red">+</span> </span>
+          <round-progress [current]="current" [max]="max" [color]="color" [background]="'#FFFFF'" [radius]=110 [animationDelay]=3000 [duration]=3000>   </round-progress>
+          <p class="indicator-text"> million kilometers of <br> something </p>
+        </div>
+        <div class="indicator">
+            <span class="center-text">500<span style="color:red">+</span> </span>
+            <round-progress [current]="current" [max]="max" [color]="color" [background]="'#FFFFF'"  [radius]=110 [animationDelay]=3000 [duration]=3000></round-progress>
+            <p class="indicator-text"> fancy patents filled </p>
+          </div>
+
+          <div class="indicator">
+              <span class="center-text" id="thrid-circle"> 20 </span>
+              <round-progress [current]="current" [max]="max" [color]="color" [background]="'#FFFFF'"  [radius]=110 [animationDelay]=3000 [duration]=3000></round-progress>
+              <p class="indicator-text"> factories throughout <br> the world </p>
+            </div>
+      </div>
+
+
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="socialize">
+    <div class="container">
+      <div class="reachout">
+        <div class="contact">
+          <p class="contactHeaders"> Contact Us:</p>
+          <div class="content">
+            <p> Headquaters: <br> 20 South Expressway <br> NY - 10001 USA </p>
+            <p>888.333.3333 <br> 770.999.5555 (Outside US and Canada)</p>
+            <p> <a href="#">Global Locations >></a> </p>
+          </div>
+        </div>
+        <div class="connect">
+          <p class="contactHeaders">Connect With Us:</p>
+          <div class="content">
+            <p> <a href="#"> Press Releases</a> </p>
+            <p> <a href="#"> Tradeshow Calender</a></p>
+            <p> <a href="#"> News</a></p>
+            <p> <a href="#"> Blogs</a></p>
+          </div>
+        </div>
+
+        <div class="links">
+          <p class="contactHeaders">Links</p>
+          <div class="content">
+            <p> <a href="#"> Privacy Policy</a> </p>
+            <p> <a href="#"> Terms of Use</a></p>
+            <p> <a href="#"> Sitemap</a></p>
+            <p> <a href="#"> Catlog</a></p>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <footer>
+<div class="container" style="height:100px;">
+  <div class="footer">
+      <p id="footer-text"> 2017 Generic Company LLC. All Rights Reserved | Site Created by Thomas Marketing</p>
+  </div>
+    
+</div>
+  </footer>
+
+</section>
